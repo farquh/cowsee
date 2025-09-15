@@ -41,7 +41,7 @@ $ cowsee hello_world.shp
 
 ## Setup
 
-Package and environment management is handled by [uv](https://docs.astral.sh/uv/guides/install-python/). 
+Package and environment management is handled by [uv](https://docs.astral.sh/uv/getting-started/installation/). 
 
 ```console
 $ uv sync
