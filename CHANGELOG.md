@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+## [0.1.1] - 2025-09-15
+
+
+### Added
+
+- Release links on this changelog.
+
+### Changed 
+
+- Input file argument help text.
+
+### Fixed
+
+- Path to uv installation guide on readme.
+
+
 ## [0.1.0] - 2025-09-11
 
 ### Added
@@ -17,4 +33,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Maybe you could use it to quickly look at geometries without opening any applications. 
 - Otherwise, there is little to no utility to this project.
 
+[0.1.1]: https://github.com/farquh/cowsee/releases/tag/v0.1.1
 [0.1.0]: https://github.com/farquh/cowsee/releases/tag/v0.1.0
