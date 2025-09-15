@@ -13,10 +13,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Release links on this changelog.
+- Example using uvx on readme.
+- Install instructions on readme.
+
+### Removed
+
+- Setup (from github clone) instructions from readme. 
 
 ### Changed 
 
 - Input file argument help text.
+- Clarified run instructions on readme.
 
 ### Fixed
 

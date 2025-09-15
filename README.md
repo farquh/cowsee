@@ -39,40 +39,41 @@ $ cowsee hello_world.shp
 > [!NOTE]  
 > `cowsee` requires a monospaced font to be properly displayed without looking real funky.
 
-## Setup
+## Try
 
-Package and environment management is handled by [uv](https://docs.astral.sh/uv/getting-started/installation/). 
+If you have [uv](https://docs.astral.sh/uv/getting-started/installation/) installed, give it a spin with `uvx` and say "hello, world!"
 
-```console
-$ uv sync
+```
+uvx cowsee https://international.ipums.org/international/resources/gis/IPUMSI_world_release2024.zip
 ```
 
-```console
-$ source .venv/bin/activate   # Linux/macOS
-$ .venv\Scripts\activate      # Windows
-```
+## Install
+
+You can install `cowsee` into your python environment with [uv](https://docs.astral.sh/uv/getting-started/installation/) or [pip](https://pypi.org/project/cowsee/).
+
+`uv add cowsee`
+
+`pip install cowsee`
 
 ## Run
 
 To run, it is as simple as:
 
-```console
-$ cowsee <filepath/url>
+```
+cowsee <filepath/url>
 ```
 
-Anything that can be read by `geopandas.read_file()` can be handled by `cowsee`. 
-This includes links! Try saying "hello world" yourself:
+Any file type or url that can be input into the `filename` argument of 
+[geopandas.read_file()](https://geopandas.org/en/v1.1.1/docs/reference/api/geopandas.read_file.html) 
+can be handled by `cowsee`.
 
-```console
-$ cowsee https://international.ipums.org/international/resources/gis/IPUMSI_world_release2024.zip
-```
-
-Supports Polygon, LineString, and Point data.
+Supports visualization of Polygon, LineString, and Point data.
 
 To output a larger or smaller image, the maximum width can be defined using the `--width` or `-w` flag.
 
 Complex Line and Polygon geometries can sometimes visually benefit from some simplification before drawing. 
-This can be achieved by adding the `--simplify-ratio` or `-s` flag. 
+This can be achieved by adding the `--simplify-ratio` or `-s` flag followed by the ratio number. For example,
+`-s 0.5` simplifies geometries to 50% of a text character's equivalent geometric width. 
 
 Finally, if you don't want to see the cow (said no one, ever) you can pass the `--no-cow` flag.
 
