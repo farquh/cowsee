@@ -6,7 +6,7 @@ from cowsee.core import display
 def main() -> None:
     """Display geometry file data on the console."""
     parser = argparse.ArgumentParser()
-    parser.add_argument("file", type=str, help="GIS vector file to view")
+    parser.add_argument("file", type=str, help="Geospatial vector file to view (e.g. shapefile)")
     parser.add_argument(
         "-w",
         "--width",
